@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yu｜內容企劃 × 視覺影音 × AI 協作作品集</title>
-  <meta name="description" content="Yu 的內容企劃求職作品集，展示小林髮廊企業實戰專案、趣畫畫虛擬品牌企劃、其他影音作品，以及過往影視 PM 經驗。">
+  <title>Yu｜內容企劃作品集 × AI 協作 × 影音製作</title>
+  <meta name="description" content="Yu 的內容企劃求職作品集，收錄小林髮廊企業實作、趣畫畫 AI 品牌內容實作與自主命題影音作品，呈現從需求理解、內容發想到製作落地的過程。">
   <meta name="author" content="Yu">
   <meta name="theme-color" content="#F7F4EC">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_TW">
-  <meta property="og:title" content="Yu｜內容企劃 × 視覺影音 × AI 協作作品集">
-  <meta property="og:description" content="從品牌需求與受眾出發，把企劃轉化為可被看見、理解與使用的內容。">
+  <meta property="og:title" content="Yu｜內容企劃作品集 × AI 協作 × 影音製作">
+  <meta property="og:description" content="Yu 的內容企劃求職作品集，收錄企業實作、虛擬品牌內容實作與自主命題影音作品。">
   <meta property="og:image" content="https://sychao1026-glitch.github.io/vibe-coding-web/images/og-cover.png">
   <style>
     :root {
@@ -37,6 +37,7 @@
       background: var(--paper);
       color: var(--navy);
       font-family: "Avenir Next", "Noto Sans TC", "PingFang TC", system-ui, sans-serif;
+      font-size: clamp(16px, 1vw, 17px);
       line-height: 1.75;
       padding-bottom: 62px;
     }
@@ -44,9 +45,9 @@
     a:focus-visible { outline: 3px solid var(--blue-deep); outline-offset: 5px; border-radius: 6px; }
     p { margin: 0; max-width: 65ch; color: var(--text-soft); }
     h1, h2, h3, h4 { margin: 0; line-height: 1.08; letter-spacing: -.045em; text-wrap: balance; }
-    h1 { font-size: clamp(50px, 7vw, 100px); }
-    h2 { font-size: clamp(40px, 5.2vw, 72px); }
-    h3 { font-size: clamp(25px, 2.8vw, 38px); }
+    h1 { font-size: clamp(50px, 5.4vw, 64px); }
+    h2 { font-size: clamp(38px, 4.2vw, 48px); }
+    h3 { font-size: clamp(24px, 2.4vw, 29px); }
     ul, ol { margin: 0; padding: 0; }
     section { scroll-margin-top: 96px; }
 
@@ -134,7 +135,7 @@
     /* Formal portfolio content refinements */
     .hero-inner { width: min(100%, 900px); }
     .hero-role { margin-top: 24px; color: var(--blue-deep); font-size: clamp(18px, 2vw, 25px); font-weight: 800; }
-    .hero-copy { max-width: 58ch; font-size: clamp(16px, 1.4vw, 19px); }
+    .hero-copy { max-width: 58ch; font-size: clamp(16px, 1.2vw, 17px); }
     .about-copy article .meta { display: block; margin-bottom: 14px; }
     .proposal { min-height: 430px; }
     .proposal-media { min-height: 150px; display: grid; place-items: center; margin-bottom: 28px; border: 1px dashed rgb(69 108 134 / .45); border-radius: 12px; background: rgb(251 250 246 / .58); color: var(--blue-deep); }
@@ -306,7 +307,6 @@
     .selected-card { padding:clamp(28px,4vw,46px); border-radius:var(--radius); background:var(--surface); border:1px solid var(--line); }
     .selected-card h3 { margin:14px 0; } .selected-card ul { margin:20px 0 0 20px; color:var(--text-soft); }
     .media-count { margin-top:26px; padding:18px; border-radius:12px; background:rgb(169 202 225/.18); color:var(--blue-deep); font-weight:800; }
-    .resume-button { margin-top:24px; opacity:.72; cursor:not-allowed; }
     .overview-list { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; margin-bottom:70px; background:var(--line); list-style:none; }
     .overview-list li { padding:22px; background:var(--surface); color:var(--text-soft); }
     .overview-list strong { display:block; margin-bottom:8px; color:var(--blue-deep); font-size:11px; }
@@ -317,10 +317,10 @@
     .portrait-media { width:min(100%,430px); aspect-ratio:9/16; min-height:0; margin-inline:auto; }
     .media-frame { width:min(100%,430px); aspect-ratio:9/16; margin:0 auto; overflow:hidden; border:1px solid rgb(69 108 134 / .3); border-radius:var(--radius); background:var(--navy); box-shadow:0 22px 58px rgb(48 60 72 / .11); }
     .media-frame iframe,.media-frame img { width:100%; height:100%; display:block; border:0; }
-    .video-frame iframe { pointer-events:none; }
+    .video-frame iframe { pointer-events:auto; }
     .poster-frame { background:var(--surface); }
     .poster-frame img { object-fit:contain; }
-    .case-content h3,.brand-foundation h3,.case-subsection h3,.proposal-block h3 { margin:12px 0 22px; font-size:clamp(28px,3.5vw,46px); }
+    .case-content h3,.brand-foundation h3,.case-subsection h3,.proposal-block h3 { margin:12px 0 22px; font-size:clamp(24px,2.4vw,29px); }
     .case-content dl { display:grid; gap:18px; } .case-content dl div { padding-bottom:18px; border-bottom:1px solid var(--line); }
     .case-content dt { font-weight:800; } .case-content dd { margin:6px 0 0; color:var(--text-soft); }
     .content-flow { display:flex; align-items:stretch; gap:1px; margin:28px 0; background:var(--line); list-style:none; }
@@ -333,12 +333,12 @@
     .proposal-visuals { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
     .compact-proposal { padding-bottom:0; }
     .selected-row { min-height:620px; } .video-pair { width:100%; display:grid; grid-template-columns:repeat(2,minmax(220px,1fr)); gap:18px; }
-    #interior-videos { grid-template-columns:1.35fr .65fr; }
-    .video-pair .media-frame { width:100%; }
+    #interior-videos { grid-template-columns:1fr; }
+    #interior-videos > :first-child { order:0; }
+    #interior-videos .case-content { max-width:900px; }
+    #interior-videos .video-pair { width:min(100%,878px); grid-template-columns:repeat(2,minmax(0,430px)); justify-content:center; margin:clamp(30px,4vw,54px) auto 0; }
+    .video-pair .media-frame { width:min(100%,430px); }
     .project-note { margin-top:24px; color:var(--blue-deep); font-weight:800; }
-    .ai-workflow { display:grid; grid-template-columns:repeat(5,1fr); gap:1px; background:var(--line); list-style:none; }
-    .ai-workflow li { position:relative; padding:26px 20px; background:var(--surface); font-weight:800; }
-    .ai-workflow li:not(:last-child)::after { content:"→"; position:absolute; right:-7px; color:var(--blue-deep); z-index:1; }
 
     /* Brand system refinement */
     body { background:
@@ -426,16 +426,13 @@
     .overview-list li,.content-flow li,.brand-gallery div,.media-placeholder,.proposal-visuals > * {
       border-color:rgb(48 60 72 / .14);
     }
-    #workflow { width:min(calc(100% - 20px),var(--content)); padding-inline:clamp(28px,6vw,84px); border-radius:28px; background:rgb(169 202 225 / .18); }
-    .ai-workflow { gap:8px; background:transparent; }
-    .ai-workflow li { border:1px solid var(--line); border-radius:12px; background:rgb(251 250 246 / .72); }
     .button,.text-link,.nav-links a { transition:transform .24s cubic-bezier(.16,1,.3,1),color .2s ease,background .2s ease,box-shadow .2s ease; }
 
     /* Integrated About: career, capabilities and method in one section. */
     .about-integrated { padding-block:clamp(90px,11vw,150px); }
     .about-heading { max-width:720px; }
     .about-heading h2 { margin-top:12px; }
-    .about-heading p { max-width:52ch; margin-top:18px; font-size:clamp(17px,1.5vw,20px); }
+    .about-heading p { max-width:52ch; margin-top:18px; font-size:clamp(16px,1.2vw,17px); }
     .about-career {
       display:grid;
       grid-template-columns:minmax(0,1fr) auto;
@@ -449,7 +446,6 @@
     .about-career > div { max-width:760px; }
     .about-career h3,.about-group h3 { font-size:clamp(23px,2.4vw,32px); }
     .about-career p { margin-top:14px; font-size:17px; }
-    .about-career .resume-button { align-self:center; white-space:nowrap; }
     .about-group { padding-top:clamp(46px,6vw,74px); }
     .capability-list { display:grid; grid-template-columns:1fr 1fr 1.18fr; margin-top:30px; border-top:1px solid var(--line); }
     .capability-list article { min-width:0; padding:30px clamp(18px,2.5vw,34px) 8px 0; }
@@ -459,18 +455,8 @@
     .capability-list p { margin-top:12px; }
     .about-method { display:grid; grid-template-columns:minmax(230px,.72fr) minmax(0,1.28fr); gap:clamp(38px,6vw,84px); align-items:end; }
     .about-method-copy p { max-width:44ch; margin-top:14px; }
-    .about-workflow { display:grid; grid-template-columns:repeat(5,minmax(112px,1fr)); gap:10px; list-style:none; }
-    .about-workflow li { position:relative; min-height:76px; display:flex; align-items:center; padding:14px 15px; border:1px solid rgb(48 60 72 / .14); border-radius:12px; background:rgb(169 202 225 / .18); color:var(--navy); font-size:13px; font-weight:800; line-height:1.45; box-shadow:0 8px 24px rgb(48 60 72 / .05); }
-    .about-workflow li:nth-child(2),.about-workflow li:nth-child(5) { background:rgb(158 173 145 / .16); }
-    .about-workflow li:nth-child(3) { background:rgb(195 174 142 / .17); }
-    .about-workflow li:nth-child(4) { background:rgb(169 202 225 / .1); }
-    .about-workflow li:not(:last-child)::after { content:"→"; position:absolute; right:-8px; top:50%; z-index:2; color:var(--blue-deep); transform:translateY(-50%); }
     .work-kicker { display:block; margin-bottom:clamp(42px,5vw,66px); padding-bottom:18px; border-bottom:1px solid rgb(48 60 72 / .15); color:var(--blue-deep); font-size:11px; font-weight:850; letter-spacing:.13em; }
 
-    .workflow-list { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1px; list-style: none; background: var(--line); }
-    .workflow-list li { min-height: 220px; padding: 26px 22px; background: var(--paper); }
-    .workflow-list h3 { margin-top: 54px; font-size: 22px; }
-    .workflow-list p { margin-top: 9px; font-size: 13px; }
 
     .contact { text-align: center; }
     .contact .section-head { margin-inline: auto; }
@@ -483,10 +469,62 @@
     .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
     .reveal.is-visible { opacity: 1; transform: translateY(0); }
 
+    /* Formal job portfolio content system */
+    .hero .eyebrow { display:block; margin-bottom:24px; }
+    .hero h1 { max-width:11ch; }
+    .hero h1 span { margin-top:8px; }
+    .hero-keywords { display:flex; flex-wrap:wrap; gap:8px 18px; margin-top:24px; color:var(--blue-deep); font-size:13px; font-weight:800; }
+    .hero-keywords span + span::before { content:"｜"; margin-right:18px; color:var(--line); }
+    .about-integrated { display:grid; grid-template-columns:minmax(250px,.7fr) minmax(0,1.3fr); gap:clamp(48px,9vw,132px); }
+    .about-integrated .about-heading { max-width:none; }
+    .about-integrated .about-body { display:grid; gap:24px; align-content:start; }
+    .about-integrated .about-body p { font-size:clamp(16px,1.2vw,17px); }
+    .capabilities-section { padding-top:0; }
+    .capabilities-head { max-width:760px; margin-bottom:40px; }
+    .capabilities-head h2,.work-heading h2 { margin-top:12px; }
+    .capabilities-head p,.work-heading p { margin-top:18px; }
+    .bring-list { display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .bring-item { min-width:0; padding:34px clamp(22px,3vw,40px) 38px 0; }
+    .bring-item + .bring-item { padding-left:clamp(22px,3vw,40px); border-left:1px solid var(--line); }
+    .bring-item h3 { margin-top:28px; font-size:clamp(24px,2.4vw,29px); }
+    .bring-item .bring-focus { margin-top:10px; color:var(--blue-deep); font-weight:800; }
+    .keyword-line { margin-top:20px; color:var(--text-soft); font-size:13px; font-weight:700; line-height:1.9; }
+    .work-heading { margin-bottom:clamp(48px,7vw,92px); }
+    .case-intro > h2 { font-size:clamp(34px,3.7vw,42px); }
+    .case-intro .case-display { max-width:18ch; margin-top:16px; font-size:clamp(28px,3vw,34px); }
+    .case-intro .case-display span { display:block; margin-top:8px; color:var(--blue-deep); }
+    .case-note { margin-top:18px; color:var(--blue-deep); font-weight:800; }
+    .case-content h3 { margin-top:12px; }
+    .detail-list { display:grid; gap:0; margin-top:28px; }
+    .detail-list > div { display:grid; grid-template-columns:minmax(105px,.32fr) minmax(0,1fr); gap:20px; padding:16px 0; border-top:1px solid rgb(48 60 72 / .12); }
+    .detail-list dt { color:var(--navy); font-size:13px; font-weight:850; }
+    .detail-list dd { margin:0; color:var(--text-soft); }
+    .case-evidence { margin-top:24px; padding:16px 18px; border-left:4px solid var(--blue); background:rgb(169 202 225 / .12); color:var(--navy); font-weight:750; }
+    .case-outcome.text-only { grid-template-columns:1fr; }
+    .case-outcome.text-only .case-content { max-width:900px; }
+    .media-frame iframe { pointer-events:auto; }
+    .contact .target-role { margin:22px auto 28px; color:var(--blue-deep); font-weight:800; }
+    .contact-tagline { margin:28px auto 0; font-size:13px; }
+
+    @media (max-width: 760px) {
+      h1 { font-size:clamp(38px,10.5vw,46px); }
+      h2 { font-size:clamp(32px,8.5vw,38px); }
+      h3 { font-size:clamp(22px,6.2vw,26px); }
+      .case-intro > h2 { font-size:clamp(29px,7.7vw,34px); }
+      .case-intro .case-display { font-size:clamp(24px,6.7vw,28px); }
+      .hero-keywords { display:grid; grid-template-columns:1fr 1fr; gap:8px 16px; }
+      .hero-keywords span + span::before { content:none; }
+      .about-integrated { grid-template-columns:1fr; gap:36px; }
+      .bring-list { grid-template-columns:1fr; }
+      .bring-item { padding:26px 0; }
+      .bring-item + .bring-item { padding-left:0; border-top:1px solid var(--line); border-left:0; }
+      .bring-item h3 { margin-top:16px; }
+      .detail-list > div { grid-template-columns:1fr; gap:6px; }
+      .case-intro .case-display { max-width:none; }
+    }
+
     @media (max-width: 1050px) {
       .experience-list { grid-template-columns: repeat(2, 1fr); }
-      .workflow-list { grid-template-columns: repeat(3, 1fr); }
-      .workflow-list li:nth-child(4), .workflow-list li:nth-child(5) { grid-column: span 1; }
       .case02-header, .case02-split, .collab-layout, .reflection-layout { grid-template-columns: 1fr; }
       .case01-header,.story-split { grid-template-columns:1fr; }
       .compact-case-grid { grid-template-columns:1fr; }
@@ -519,20 +557,16 @@
       .case01-index,.project-meta,.keyword-row { grid-template-columns:1fr 1fr; }
       .three-stage { grid-template-columns:1fr; }
       .before-after { grid-template-columns:1fr; } .before-after > span { transform:rotate(90deg); text-align:center; }
-      .hero h1 { font-size: clamp(40px, 12vw, 64px); }
+      .hero h1 { font-size: clamp(38px, 10.5vw, 46px); }
       .hero-copy { font-size: 17px; }
       .section { padding-block: 76px; }
       .about-integrated { padding-block:86px; }
       .about-career { grid-template-columns:1fr; align-items:start; }
-      .about-career .resume-button { justify-self:start; }
       .capability-list { grid-template-columns:1fr; }
       .capability-list article { padding:26px 0; }
       .capability-list article + article { padding-left:0; border-top:1px solid var(--line); border-left:0; }
       .capability-list h4 { margin-top:16px; }
       .about-method { grid-template-columns:1fr; align-items:start; }
-      .about-workflow { grid-template-columns:1fr; }
-      .about-workflow li { min-height:56px; padding:12px 15px; box-shadow:none; }
-      .about-workflow li:not(:last-child)::after { content:"↓"; right:auto; left:50%; top:auto; bottom:-13px; transform:translateX(-50%); }
       .case-study {
         width:min(calc(100% - 24px),var(--content));
         margin-block:46px;
@@ -550,32 +584,28 @@
       .expertise-item h3 { margin-top: 28px; }
       .proposal { min-height: 330px; }
       .experience-list { grid-template-columns: 1fr 1fr; }
-      .workflow-list { grid-template-columns: 1fr 1fr; }
-      .workflow-list li { min-height: 180px; }
       .case-facts, .info-grid, .reflection-grid, .foundation-grid, .brief-grid { grid-template-columns: 1fr 1fr; }
       .case-flow, .case-flow.four { grid-template-columns: 1fr 1fr; }
       .case-assets, .application-grid { grid-template-columns: 1fr 1fr; }
       .concept-grid { grid-template-columns: 1fr; }
       .overview-list,.case-outcome,.case-outcome.reverse,.selected-row,.selected-row.reverse,.brand-foundation,.proposal-block { grid-template-columns:1fr; }
       .case-outcome.reverse > :first-child { order:0; }
-      .content-flow,.ai-workflow { display:grid; grid-template-columns:1fr; }
-      .content-flow li:not(:last-child)::after,.ai-workflow li:not(:last-child)::after { content:"↓"; right:auto; left:50%; bottom:-14px; }
+      .content-flow { display:grid; grid-template-columns:1fr; }
+      .content-flow li:not(:last-child)::after { content:"↓"; right:auto; left:50%; bottom:-14px; }
       .proposal-visuals,.video-pair { grid-template-columns:1fr; }
       #interior-videos { grid-template-columns:1fr; }
-      .video-pair { width:min(100%,430px); margin-inline:auto; }
+      #interior-videos .video-pair { width:min(100%,430px); grid-template-columns:1fr; margin-inline:auto; }
       .footer { height: 56px; padding-inline: 18px; }
       .footer small { display: none; }
     }
 
     @media (max-width: 480px) {
-      .hero h1 { font-size: clamp(36px, 10.8vw, 48px); }
+      .hero h1 { font-size: clamp(36px, 10.4vw, 44px); }
       .hero-actions { align-items: stretch; }
       .hero-actions .button { width: 100%; }
       .case-study { width:calc(100% - 16px); padding:46px 15px; border-radius:20px; }
       .case-study + .case-study { padding-top:46px; }
-      .experience-list, .workflow-list { grid-template-columns: 1fr; }
-      .workflow-list li { min-height: 145px; }
-      .workflow-list h3 { margin-top: 24px; }
+      .experience-list { grid-template-columns: 1fr; }
       .case-facts, .info-grid, .reflection-grid, .foundation-grid, .brief-grid, .case-flow, .case-flow.four, .case-assets, .application-grid, .then-now { grid-template-columns: 1fr; }
       .case-flow li { min-height: 130px; }
       .case-visual-large { min-height: 300px; }
@@ -588,8 +618,8 @@
       .brand-gallery .wide { grid-column:auto; }
       .overview-list,.case-outcome,.case-outcome.reverse,.selected-row,.selected-row.reverse,.brand-foundation,.proposal-block { grid-template-columns:1fr; }
       .case-outcome.reverse > :first-child { order:0; }
-      .content-flow,.ai-workflow { display:grid; grid-template-columns:1fr; }
-      .content-flow li:not(:last-child)::after,.ai-workflow li:not(:last-child)::after { content:"↓"; right:auto; left:50%; bottom:-14px; }
+      .content-flow { display:grid; grid-template-columns:1fr; }
+      .content-flow li:not(:last-child)::after { content:"↓"; right:auto; left:50%; bottom:-14px; }
       .proposal-visuals,.video-pair { grid-template-columns:1fr; }
     }
 
@@ -611,65 +641,74 @@
     <a class="brand" href="#home" aria-label="回到首頁"><span class="brand-mark" aria-hidden="true">\(‘◡’)人(‘◡’)/</span><span>Yu</span></a>
     <div class="nav-links">
       <a href="#about">關於我</a>
-      <a href="#case-01">作品案例</a>
+      <a href="#work">作品案例</a>
       <a href="#contact">聯絡我</a>
     </div>
   </nav>
 
   <main id="main">
     <section class="hero" id="home">
-      <video class="hero-video" autoplay muted loop playsinline preload="metadata" tabindex="-1" aria-hidden="true"><source src="Hello.mp4" type="video/mp4"></video>
       <div class="hero-inner">
-        <h1>從「想內容」到「做內容」</h1>
-        <p class="hero-role">內容企劃 × 影音製作 × AI 協作</p>
-        <p class="hero-copy">具影視製作與專案管理背景，現在進一步從品牌需求與受眾出發思考內容，結合內容企劃、影音製作與 AI 協作，將 Idea 轉化為實際內容。</p>
-        <div class="hero-actions"><a class="button" href="#case-01">查看作品 / View My Work</a><a class="text-link" href="#about">關於我 / About Me</a></div>
+        <span class="eyebrow">YU｜CONTENT PLANNER PORTFOLIO</span>
+        <h1>從需求出發，<span>讓內容走向落地。</span></h1>
+        <p class="hero-copy">從影視製作走向內容企劃，運用 AI 加速內容探索，結合影音製作與專案經驗，將想法轉化為實際成果。</p>
+        <div class="hero-keywords" aria-label="核心能力"><span>內容企劃</span><span>AI 協作</span><span>影音製作</span><span>專案執行</span></div>
+        <div class="hero-actions"><a class="button" href="#work">瀏覽作品 ↓</a><a class="text-link" href="#about">關於我 →</a></div>
       </div>
     </section>
 
     <section class="section shell about-integrated" id="about">
-      <header class="about-heading reveal"><span class="meta">ABOUT</span><h2>關於我</h2><p>從製作流程走向內容企劃，將想法轉化為可以被理解與執行的內容。</p></header>
-
-      <div class="about-career reveal">
-        <div><h3>職涯定位與背景</h3><p>具影視製作與後期製片／PM 背景，熟悉製作流程、時程管理、跨部門溝通與內容交付。現在進一步從品牌需求、受眾與溝通目的出發，將原有的影音執行經驗延伸至內容企劃與品牌內容。</p></div>
-        <span class="button resume-button" aria-disabled="true">查看履歷 / Resume</span>
-      </div>
-
-      <div class="about-group about-capabilities">
-        <h3 class="reveal">核心能力</h3>
-        <div class="capability-list">
-          <article class="reveal"><span class="capability-number">01</span><h4>內容企劃</h4><p>從需求、受眾與溝通目的出發，發展內容方向、Concept 與腳本。</p></article>
-          <article class="reveal"><span class="capability-number">02</span><h4>影音製作</h4><p>將內容概念轉化為腳本、拍攝、導演、剪輯與後製成果。</p></article>
-          <article class="reveal"><span class="capability-number">03</span><h4>AI 協作與專案執行</h4><p>運用 AI 加速研究、發想、文案與視覺原型探索，並結合流程、溝通與交付管理將內容落地。</p></article>
-        </div>
-      </div>
-
-      <div class="about-group about-method">
-        <div class="about-method-copy reveal"><h3>工作方式</h3><p>AI 用於加速研究、發想、文案與視覺原型溝通；內容取捨、品牌適配與最終判斷仍由我負責。</p></div>
-        <ol class="about-workflow reveal"><li>需求與受眾</li><li>內容發想</li><li>AI 協作探索</li><li>人工判斷與收斂</li><li>製作落地</li></ol>
+      <header class="about-heading reveal"><span class="meta">ABOUT ME</span><h2>從理解內容如何被完成，<br>到參與思考什麼值得被完成。</h2></header>
+      <div class="about-body reveal">
+        <p>具影視後期製作與專案管理經驗，熟悉製作流程、進度管理、跨部門溝通與成品交付。</p>
+        <p>現在進一步從品牌需求、受眾與溝通目的出發，將既有的內容製作經驗延伸至內容企劃，並運用 AI 協助資料整理、內容發想與視覺探索。</p>
+        <p>我希望成為能參與內容發想，也理解如何讓內容實際落地的內容企劃。</p>
       </div>
     </section>
 
+    <section class="section shell capabilities-section" aria-labelledby="capabilities-title">
+      <header class="capabilities-head reveal"><span class="meta">WHAT I BRING</span><h2 id="capabilities-title">從內容方向，到實際落地。</h2></header>
+      <div class="bring-list">
+        <article class="bring-item reveal"><span class="meta">01｜找到內容方向</span><h3>內容企劃</h3><p class="keyword-line">需求理解｜受眾思考｜內容發想｜企劃規劃</p></article>
+        <article class="bring-item reveal"><span class="meta">02｜加速想法成形</span><h3>AI 協作 × 內容製作</h3><p class="keyword-line">AI 探索｜文案發想｜視覺企劃｜影音製作</p></article>
+        <article class="bring-item reveal"><span class="meta">03｜讓企劃接近落地</span><h3>專案執行 × 協作經驗</h3><p class="keyword-line">製作流程｜溝通協調｜進度管理｜成品交付</p></article>
+      </div>
+    </section>
+
+    <section class="work-heading section shell reveal" id="work"><span class="meta">SELECTED WORK</span><h2>從不同需求，<br>發展適合的內容形式。</h2><p>收錄企業實戰、虛擬品牌與自主命題影音作品，呈現我如何理解需求、發展內容方向，並將想法轉化為實際成果。</p></section>
+
     <section class="case-study section shell" id="case-01">
-      <header class="case-intro reveal"><span class="work-kicker">WORK / SELECTED PROJECTS</span><span class="meta">CASE 01</span><h2>小林髮廊｜企業實戰專題</h2><p class="case-position">真實企業需求 × 內容企劃 × 影音與視覺落地</p><p>課程期間與小林髮廊進行真實企業實作，從年輕受眾的品牌溝通與校園人才招募需求出發，完成一支短影音與一張招募海報。</p></header>
-      <ul class="overview-list reveal"><li><strong>專案類型</strong>課程期間的真實企業實作</li><li><strong>合作對象</strong>小林髮廊</li><li><strong>最終成果</strong>品牌短影音 1 支、校園人才招募海報 1 張</li><li><strong>我的角色</strong>內容企劃、腳本、導演、剪輯、視覺提案與 AI 視覺協作</li></ul>
-      <article class="case-outcome reveal" id="kobayashi-video"><div class="media-frame video-frame"><iframe src="https://www.youtube-nocookie.com/embed/YJnuWPV-lQM?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=YJnuWPV-lQM&amp;controls=0&amp;rel=0&amp;playsinline=1&amp;disablekb=1" title="小林髮廊品牌短影音" loading="lazy" tabindex="-1" allow="autoplay; encrypted-media; picture-in-picture"></iframe></div><div class="case-content"><span class="meta">01 BRAND VIDEO</span><h3>品牌短影音</h3><dl><div><dt>需求與受眾</dt><dd>面向 18–30 歲年輕觀眾製作品牌短影音，但避免直接介紹品牌而產生過強的廣告感。</dd></div><div><dt>企劃洞察</dt><dd>觀眾未必想聽品牌直接宣稱專業，但可以從設計師的真實回答與判斷中，自然感受到專業。</dd></div><div><dt>核心 Concept</dt><dd>「有趣是入口，專業是內容價值。」</dd></div></dl><ol class="content-flow"><li>趣味與反差問題</li><li>設計師專業回答</li><li>人物反應與品牌印象</li></ol><p><strong>我的角色：</strong>企劃、腳本、現場導演、剪輯與後製。</p></div></article>
-      <article class="case-outcome reverse reveal" id="kobayashi-poster"><figure class="media-frame poster-frame"><img src="https://drive.google.com/thumbnail?id=1QCthHfg799P2PRT90vWPU2TvnLr5oED8&amp;sz=w1600" alt="小林髮廊校園人才招募海報" loading="lazy" decoding="async"></figure><div class="case-content"><span class="meta">02 RECRUITMENT VISUAL</span><h3>校園人才招募海報</h3><dl><div><dt>需求與受眾</dt><dd>以美容美髮相關科系學生、實習生與應屆畢業生為主要對象，降低傳統招募海報制式、資訊導向的感受。</dd></div><div><dt>企劃問題</dt><dd>如何讓學生先產生「我也想成為這樣的人」的職涯想像，再進一步閱讀招募資訊？</dd></div><div><dt>核心 Concept</dt><dd>「髮型夢想練習生」</dd></div></dl><ol class="content-flow"><li>我們正在徵人</li><li>髮型夢想練習生</li><li>下一位被看見的設計師，可能就是你</li></ol><p><strong>我的角色：</strong>主題發想、招募文案、主視覺方向、資訊層級規劃與 AI 視覺協作。</p></div></article>
+      <header class="case-intro reveal"><span class="meta">CASE 01｜SHOWLINHAIR</span><h2>小林髮廊｜企業內容企劃實作</h2><p class="case-display">從真實需求，<span>轉化為不同內容形式。</span></p><p>從品牌溝通與人才招募需求出發，分別發展短影音與招募視覺，練習依據受眾與目的選擇適合的內容解法。</p></header>
+
+      <article class="case-outcome reveal" id="kobayashi-video">
+        <div class="media-frame video-frame"><iframe src="https://www.youtube-nocookie.com/embed/YJnuWPV-lQM?controls=1&amp;mute=1&amp;rel=0&amp;playsinline=1" title="設計師快問快答短影音" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="case-content"><span class="meta">01｜BRAND VIDEO</span><h3>設計師快問快答短影音</h3><dl class="detail-list"><div><dt>專案性質</dt><dd>真實品牌合作｜課程專案</dd></div><div><dt>需求與受眾</dt><dd>面向年輕觀眾製作品牌短影音，在避免過度廣告感的同時，呈現設計師的專業與個人特色。</dd></div><div><dt>內容思考</dt><dd>觀眾未必想聽品牌直接宣稱專業，但可以透過設計師的真實回答與判斷，自然感受到專業。</dd></div><div><dt>核心概念</dt><dd>問題吸引觀看，回答創造價值。</dd></div><div><dt>內容設計</dt><dd>趣味吸引 → 專業建立 → 品牌收束</dd></div><div><dt>我的參與</dt><dd>企劃討論｜腳本發展｜現場導演｜影音剪輯</dd></div><div><dt>執行方式</dt><dd>將團隊確認的內容方向發展為訪談腳本，並透過現場引導、素材選擇與內容排序，完成約 90 秒短影音。</dd></div></dl><p class="case-evidence"><strong>能力證據</strong><br>需求轉譯｜腳本發展｜現場執行｜影音敘事</p></div>
+      </article>
+
+      <article class="case-outcome reverse reveal" id="kobayashi-poster">
+        <figure class="media-frame poster-frame"><img src="https://drive.google.com/thumbnail?id=1QCthHfg799P2PRT90vWPU2TvnLr5oED8&amp;sz=w1600" alt="小林髮廊校園徵才招募海報" loading="lazy" decoding="async"></figure>
+        <div class="case-content"><span class="meta">02｜RECRUITMENT VISUAL</span><h3>校園徵才招募海報</h3><dl class="detail-list"><div><dt>專案性質</dt><dd>課堂練習｜個人作業</dd></div><div><dt>需求與受眾</dt><dd>以美容美髮相關科系學生、實習生與應屆畢業生為主要對象，降低傳統招募海報制式、資訊導向的感受。</dd></div><div><dt>企劃問題</dt><dd>如何讓學生先產生對美髮職涯的想像，再進一步閱讀招募資訊？</dd></div><div><dt>核心概念</dt><dd>髮型夢想練習生</dd></div><div><dt>內容方向</dt><dd>以年輕人物群像、Editorial 排版與品牌識別，建立具有成長感與舞台感的招募視覺。</dd></div><div><dt>我的實作</dt><dd>主題發想｜招募文案｜主視覺方向｜版型探索｜AI 視覺協作</dd></div></dl><p class="case-evidence"><strong>能力證據</strong><br>受眾思考｜概念發展｜文案轉譯｜視覺企劃</p></div>
+      </article>
     </section>
 
     <section class="case-study section shell" id="case-02">
-      <header class="case-intro reveal"><span class="meta">CASE 02</span><h2>趣畫畫｜虛擬品牌企劃</h2><p class="case-position">虛擬品牌建構 × 品牌內容 × 概念提案</p><p>以輕鬆、有趣、低門檻的繪畫體驗建立虛擬品牌，並將同一品牌世界觀延伸至內容應用、商品與異業合作概念。</p></header>
-      <article class="brand-foundation reveal" id="funpaint-brand"><div><span class="meta">01 VIRTUAL BRAND</span><h3>虛擬品牌建構</h3><p>「趣畫畫」是一個以輕鬆、有趣、低門檻的繪畫體驗為核心所建立的虛擬品牌，希望降低接觸繪畫的心理門檻，讓創作自然融入日常生活。</p><ul class="brand-points"><li><strong>目標受眾</strong>希望以簡單、有趣方式接觸創作的成人與親子族群</li><li><strong>品牌個性</strong>親切・有趣・療癒・富有創造力</li><li><strong>品牌內容</strong>Logo、品牌定位、視覺規格與代表視覺</li></ul></div><div class="media-placeholder brand-hero" role="img" aria-label="Logo、品牌定位、視覺規格與代表視覺待置入">Logo／品牌定位／視覺規格／代表視覺<br>待置入</div></article>
-      <article class="case-subsection reveal" id="funpaint-content"><span class="meta">02 BRAND CONTENT GALLERY</span><h3>品牌內容與多元工具應用</h3><p>以共同的品牌定位與視覺規格，將內容延伸至社群、LINE OA 與多媒體形式，練習在不同工具與接觸點中維持一致的品牌世界觀。</p><div class="brand-gallery"><div class="wide">招生 DM</div><div>LINE 貼圖</div><div class="wide">FB 宣傳圖文 × 3</div><div>LINE OA 選單</div><div>多頁圖片＋推播圖片</div><div class="wide">親子居家繪畫短影音腳本</div><div>每月一畫直播腳本</div></div></article>
-      <article class="proposal-block reveal" id="funpaint-blind-box"><div class="case-content"><span class="meta">03 CONCEPT PROPOSAL｜概念提案</span><h3>繪畫盲盒組</h3><ol class="content-flow"><li>小資族與送禮情境</li><li>盲盒的未知與驚喜感</li><li>可購買、贈送及親手完成的創作體驗</li></ol><p>此內容為概念提案，並非已上市商品。</p></div><div class="proposal-visuals"><div class="media-placeholder" role="img" aria-label="繪畫盲盒外盒視覺待置入">外盒視覺／待置入</div><div class="media-placeholder" role="img" aria-label="繪畫盲盒內容物示意待置入">盒內細節／內容物示意<br>待置入</div></div></article>
-      <article class="proposal-block compact-proposal reveal" id="funpaint-senior-collab"><div class="case-content"><span class="meta">04 CONCEPT PROPOSAL｜概念提案</span><h3>銀髮度假村異業合作</h3><p>繪畫具有低強度、可依個人步調參與及促進表達的特性，適合轉化為銀髮休閒體驗。趣畫畫可提供主題引導與創作活動，探索品牌接觸不同族群的可能。</p><p>此內容為概念提案，未實際合作或執行。</p></div><div class="proposal-visuals"><div class="media-placeholder" role="img" aria-label="銀髮度假村合作思維導圖待置入">思維導圖／待置入</div><div class="media-placeholder" role="img" aria-label="銀髮繪畫活動向量圖或情境示意待置入">向量圖／情境示意<br>待置入</div></div></article>
+      <header class="case-intro reveal"><span class="meta">CASE 02｜GO PAINTING</span><h2>趣畫畫｜AI × 品牌內容實作</h2><p class="case-display">用一個虛擬品牌，<span>累積不同內容實作。</span></p><p>以「趣畫畫」作為虛擬品牌情境，將不同 AI 與數位工具練習累積在同一個品牌脈絡下，探索品牌定位如何延伸至不同內容形式。</p><p class="case-note">本案例為虛擬品牌內容實作，不代表真實品牌營運成果。</p></header>
+
+      <article class="case-outcome text-only reveal" id="funpaint-brand"><div class="case-content"><span class="meta">01｜BRAND FOUNDATION</span><h3>建立共同的品牌內容情境</h3><dl class="detail-list"><div><dt>品牌核心</dt><dd>以輕鬆、有趣、低門檻的繪畫體驗，降低接觸創作的心理門檻，讓繪畫自然融入日常生活。</dd></div><div><dt>目標受眾</dt><dd>希望以簡單、有趣方式接觸創作的成人與親子族群。</dd></div><div><dt>品牌個性</dt><dd>親切｜有趣｜療癒｜富有創造力</dd></div><div><dt>實作內容</dt><dd>品牌定位｜Logo｜視覺識別｜LINE OA</dd></div></dl></div></article>
+
+      <article class="case-outcome text-only reveal" id="funpaint-content"><div class="case-content"><span class="meta">02｜AI CONTENT</span><h3>從品牌設定，延伸不同內容形式。</h3><p>以共同的品牌定位與視覺方向，練習將內容應用於不同數位接觸點。</p><dl class="detail-list"><div><dt>實作內容</dt><dd>社群圖文｜招生 DM｜EDM｜LINE OA｜AI 文案｜AI 視覺｜短影音腳本｜直播腳本</dd></div><div><dt>我的實作</dt><dd>內容發想｜文案整理｜視覺方向探索｜AI 協作｜內容原型製作</dd></div></dl><p class="case-evidence"><strong>能力證據</strong><br>品牌內容延伸｜跨媒介應用｜AI 輔助探索｜視覺一致性</p></div></article>
     </section>
 
-    <section class="case-study section shell" id="case-03"><header class="case-intro reveal"><span class="meta">CASE 03</span><h2>自主影音作品</h2><p class="case-position">產品影音 × 室內設計短影音</p><p>以求職情境自主設定內容題目，完成一支產品影片與兩支室內設計短影音，呈現從企劃到後製的影音執行能力。</p></header><article class="selected-row reveal" id="mamba-video"><div class="media-frame video-frame"><iframe src="https://www.youtube-nocookie.com/embed/5m_Dv44BdNA?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=5m_Dv44BdNA&amp;controls=0&amp;rel=0&amp;playsinline=1&amp;disablekb=1" title="Mamba 人體工學椅產品短影音" loading="lazy" tabindex="-1" allow="autoplay; encrypted-media; picture-in-picture"></iframe></div><div class="case-content"><span class="meta">01 PRODUCT VIDEO</span><h3>Mamba 人體工學椅</h3><p>為準備 3C／電商相關職位所建立的自主模擬專案，以新品上市促銷作為情境，完成產品影片 1 支。</p><p><strong>我的角色：</strong>企劃、腳本、拍攝、剪輯與後製。</p><p class="project-note">非品牌正式委託案件。</p></div></article><article class="selected-row reverse reveal" id="interior-videos"><div class="case-content"><span class="meta">02 INTERIOR VIDEO</span><h3>室內設計短影音</h3><p>為準備室內設計相關職位所進行的自主內容企劃與影音製作。一支從空間參觀／新家開箱切入，另一支從裝潢風格介紹切入。</p><p><strong>我的角色：</strong>內容方向規劃、腳本、拍攝與影音後製。</p><p class="project-note">非品牌正式委託或合作專案。</p></div><div class="video-pair"><div class="media-frame video-frame"><iframe src="https://www.youtube-nocookie.com/embed/2Tu5Os4PjhQ?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=2Tu5Os4PjhQ&amp;controls=0&amp;rel=0&amp;playsinline=1&amp;disablekb=1" title="室內設計新家開箱短影音" loading="lazy" tabindex="-1" allow="autoplay; encrypted-media; picture-in-picture"></iframe></div><div class="media-frame video-frame"><iframe src="https://www.youtube-nocookie.com/embed/VzMKfj7qJ_I?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=VzMKfj7qJ_I&amp;controls=0&amp;rel=0&amp;playsinline=1&amp;disablekb=1" title="室內設計裝潢風格介紹短影音" loading="lazy" tabindex="-1" allow="autoplay; encrypted-media; picture-in-picture"></iframe></div></div></article></section>
+    <section class="case-study section shell" id="case-03">
+      <header class="case-intro reveal"><span class="meta">CASE 03｜SELF-INITIATED VIDEO WORKS</span><h2>自主命題影音實作</h2><p class="case-display">從內容切角，<span>到影音製作完成。</span></p><p>自行設定產品與空間內容情境，練習從溝通目的、內容切角與腳本規劃出發，依作品需求完成拍攝或素材整理，並進行剪輯與後製。</p><p class="case-note">以下為自主設定情境完成的影音作品，非品牌正式委託或合作專案。</p></header>
+      <article class="selected-row reveal" id="mamba-video"><div class="media-frame video-frame"><iframe src="https://www.youtube-nocookie.com/embed/5m_Dv44BdNA?controls=1&amp;mute=1&amp;rel=0&amp;playsinline=1" title="Mamba 人體工學椅產品影片" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div><div class="case-content"><span class="meta">01｜PRODUCT VIDEO</span><h3>Mamba 人體工學椅產品影片</h3><dl class="detail-list"><div><dt>專案性質</dt><dd>自主模擬專案｜非品牌正式委託</dd></div><div><dt>內容情境</dt><dd>以新品上市與促銷溝通為情境，從產品特色與使用需求出發，練習將功能資訊轉化為影音內容。</dd></div><div><dt>我的實作</dt><dd>內容企劃｜腳本｜拍攝｜剪輯｜後製</dd></div></dl><p class="case-evidence"><strong>能力證據</strong><br>產品內容轉譯｜影音節奏｜拍攝執行｜後製整合</p></div></article>
+      <article class="selected-row reverse reveal" id="interior-videos"><div class="case-content"><span class="meta">02｜INTERIOR VIDEO</span><h3>室內設計短影音</h3><dl class="detail-list"><div><dt>專案性質</dt><dd>自主內容實作｜非品牌正式委託</dd></div><div><dt>內容情境</dt><dd>以室內設計品牌的顧客旅程為思考起點，嘗試從不同階段的觀看需求發展兩支短影音。</dd></div><div><dt>素材說明</dt><dd>本作品未進行實地拍攝，畫面素材取自室內設計公司公開發布之照片，經整理、剪輯與內容編排後使用。</dd></div><div><dt>風格認識</dt><dd>從裝潢風格介紹切入，協助仍在探索階段的觀眾認識不同空間風格與特色。</dd></div><div><dt>空間想像</dt><dd>從空間參觀／新家開箱切入，讓已有裝潢需求的觀眾透過實際空間建立生活情境與設計想像。</dd></div><div><dt>我的實作</dt><dd>內容方向規劃｜腳本｜素材整理｜影音後製</dd></div></dl><p class="case-evidence"><strong>能力證據</strong><br>顧客旅程思考｜內容切角｜空間敘事｜影音製作</p></div><div class="video-pair"><div class="media-frame video-frame"><iframe src="https://www.youtube-nocookie.com/embed/2Tu5Os4PjhQ?controls=1&amp;mute=1&amp;rel=0&amp;playsinline=1" title="室內設計新家開箱短影音" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div><div class="media-frame video-frame"><iframe src="https://www.youtube-nocookie.com/embed/VzMKfj7qJ_I?controls=1&amp;mute=1&amp;rel=0&amp;playsinline=1" title="室內設計裝潢風格介紹短影音" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div></div></article>
+    </section>
 
     <section class="section shell contact" id="contact">
-      <header class="section-head reveal"><h2>一起把 Idea 變成 Content.</h2><p>目前尋找內容企劃／品牌內容相關工作機會。</p></header>
-      <a class="button reveal" href="mailto:sychao1026@gmail.com" aria-label="寄信聯絡 Yu">Email / 聯絡我</a>
+      <header class="section-head reveal"><span class="meta">CONTACT</span><h2>讓下一個想法，<br>成為看得見的內容。</h2><p class="target-role"><strong>目標職位</strong><br>內容企劃｜品牌內容企劃｜社群／影音內容企劃</p></header>
+      <a class="button reveal" href="mailto:sychao1026@gmail.com" aria-label="以 Email 聯絡 Yu">Email 聯絡 ↗</a>
+      <p class="contact-tagline reveal">從「想內容」到「做內容」，讓想法被看見、被理解，也被記得。</p>
     </section>
   </main>
 
@@ -687,8 +726,8 @@
       gsap.set(revealItems, { autoAlpha: 0, y: 28 });
       gsap.timeline({ defaults: { duration: .8, ease: 'power3.out' } })
         .from('.nav', { yPercent: -100, autoAlpha: 0, duration: .6 })
-        .from('.hero h1', { y: 32, autoAlpha: 0 }, '-=.2')
-        .from('.hero-role, .hero-copy, .hero-actions', { y: 20, autoAlpha: 0, stagger: .11 }, '-=.48');
+        .from('.hero .eyebrow, .hero h1', { y: 32, autoAlpha: 0, stagger: .1 }, '-=.2')
+        .from('.hero-copy, .hero-keywords, .hero-actions', { y: 20, autoAlpha: 0, stagger: .11 }, '-=.48');
       revealItems.forEach((item) => {
         gsap.to(item, {
           autoAlpha: 1,
@@ -697,13 +736,6 @@
           ease: 'power3.out',
           clearProps: 'transform',
           scrollTrigger: { trigger: item, start: 'top 86%', once: true }
-        });
-      });
-      gsap.utils.toArray('.media-placeholder').forEach((media) => {
-        gsap.fromTo(media, { yPercent: -2 }, {
-          yPercent: 2,
-          ease: 'none',
-          scrollTrigger: { trigger: media, start: 'top bottom', end: 'bottom top', scrub: .6 }
         });
       });
     } else {
