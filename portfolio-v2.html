@@ -292,6 +292,137 @@
       font-weight:700;
     }
 
+    .funpaint-foundation .case-content,
+    .funpaint-applications .case-content { max-width:none; }
+    .funpaint-foundation-grid {
+      display:grid;
+      grid-template-columns:minmax(0,45fr) minmax(0,55fr);
+      align-items:start;
+      gap:clamp(48px,5vw,64px);
+      margin-top:var(--content-gap);
+    }
+    .funpaint-identity {
+      padding:28px;
+      border:1px solid rgb(28 84 105 / .12);
+      border-radius:var(--radius);
+      background:rgb(255 250 239 / .78);
+    }
+    .funpaint-identity-visual {
+      height:200px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      padding:10px;
+      border-radius:12px;
+      background:rgb(255 255 255 / .48);
+    }
+    .funpaint-identity-visual img {
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:contain;
+    }
+    .funpaint-claim {
+      margin-top:24px;
+      color:#1C5469;
+      font-size:clamp(20px,1.8vw,24px);
+      font-weight:800;
+      line-height:1.45;
+    }
+    .funpaint-summary { margin-top:14px; line-height:1.85; }
+    .funpaint-brand-system {
+      margin-top:22px;
+      padding-top:20px;
+      border-top:1px solid rgb(28 84 105 / .14);
+    }
+    .funpaint-palette {
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+    }
+    .funpaint-swatch {
+      width:42px;
+      height:42px;
+      border:1px solid rgb(48 60 72 / .12);
+      border-radius:50%;
+      box-shadow:inset 0 1px 0 rgb(255 255 255 / .38);
+    }
+    .funpaint-keywords {
+      margin-top:16px;
+      color:var(--navy);
+      font-size:13px;
+      font-weight:800;
+      letter-spacing:.03em;
+    }
+    .funpaint-planning { margin:0; }
+    .funpaint-planning > div {
+      padding:0 0 24px;
+      border-bottom:1px solid var(--line);
+    }
+    .funpaint-planning > div + div { padding-top:24px; }
+    .funpaint-planning dt {
+      color:var(--navy);
+      font-size:14px;
+      font-weight:800;
+    }
+    .funpaint-planning dd { margin:8px 0 0; color:var(--text-soft); }
+    .funpaint-gallery {
+      height:540px;
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      align-items:stretch;
+      gap:16px;
+      margin-top:var(--content-gap);
+    }
+    .funpaint-gallery-stack {
+      min-width:0;
+      display:grid;
+      grid-template-rows:repeat(2,minmax(0,1fr));
+      gap:16px;
+    }
+    .funpaint-figure {
+      min-width:0;
+      height:100%;
+      display:flex;
+      flex-direction:column;
+      margin:0;
+      overflow:hidden;
+      border:1px solid rgb(48 60 72 / .1);
+      border-radius:var(--radius);
+      background:rgb(247 244 236 / .72);
+      box-shadow:0 8px 24px rgb(48 60 72 / .045);
+    }
+    .funpaint-image-stage {
+      min-height:0;
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px;
+      background:rgb(247 244 236 / .72);
+    }
+    .funpaint-figure img {
+      display:block;
+      width:100%;
+      height:100%;
+      min-height:0;
+      object-fit:contain;
+    }
+    .funpaint-gallery .funpaint-image-stage { flex:1; }
+    .funpaint-caption {
+      min-height:52px;
+      display:-webkit-box;
+      overflow:hidden;
+      padding:11px 13px 13px;
+      color:var(--text-soft);
+      font-size:12px;
+      font-weight:700;
+      line-height:1.5;
+      -webkit-box-orient:vertical;
+      -webkit-line-clamp:2;
+    }
+
     .media-frame {
       width:min(100%,430px);
       aspect-ratio:9/16;
@@ -359,6 +490,12 @@
       .case-outcome,.selected-row,.case-outcome.reverse,.selected-row.reverse { grid-template-columns:1fr; }
       .case-outcome.reverse > :first-child { order:0; }
       .media-frame { width:min(100%,400px); }
+      .funpaint-foundation-grid { grid-template-columns:1fr; }
+      .funpaint-gallery {
+        height:auto;
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+      .funpaint-gallery > .funpaint-figure,.funpaint-gallery-stack { height:440px; }
     }
 
     @media (max-width:760px) {
@@ -406,6 +543,17 @@
       .detail-list > div { grid-template-columns:1fr; gap:6px; padding:12px 0; }
       .media-frame { width:min(100%,430px); }
       .video-pair { width:min(100%,430px); grid-template-columns:1fr; margin-inline:auto; }
+      .funpaint-foundation-grid { grid-template-columns:1fr; gap:30px; }
+      .funpaint-identity { padding:22px 18px; }
+      .funpaint-identity-visual { height:200px; }
+      .funpaint-gallery { grid-template-columns:1fr; height:auto; gap:14px; }
+      .funpaint-gallery-stack { height:auto; grid-template-rows:none; gap:14px; }
+      .funpaint-gallery > .funpaint-figure,.funpaint-gallery-stack .funpaint-figure { height:auto; }
+      .funpaint-gallery .funpaint-image-stage { flex:none; }
+      .funpaint-stickers .funpaint-image-stage { height:190px; }
+      .funpaint-line .funpaint-image-stage { height:360px; padding:8px; }
+      .funpaint-brand-visual .funpaint-image-stage { height:340px; }
+      .funpaint-offer .funpaint-image-stage,.funpaint-experience .funpaint-image-stage { height:300px; }
       .footer { height:56px; padding-inline:18px; }
       .footer small { display:none; }
     }
@@ -484,11 +632,57 @@
     </section>
 
     <section class="case-study section shell" id="case-02">
-      <header class="case-intro section-heading reveal"><span class="meta">CASE 02｜GO PAINTING</span><h2><span>趣畫畫｜</span><span>AI × 品牌內容實作</span></h2><p class="case-display">用一個虛擬品牌，<span>累積不同內容實作。</span></p><p>以「趣畫畫」作為虛擬品牌情境，將不同 AI 與數位工具練習累積在同一個品牌脈絡下，探索品牌定位如何延伸至不同內容形式。</p><p class="case-note">本案例為虛擬品牌內容實作，不代表真實品牌營運成果。</p></header>
+      <header class="case-intro section-heading reveal"><span class="meta">CASE 02｜GO PAINTING</span><h2><span>趣畫畫｜</span><span>AI × 品牌內容實作</span></h2><p class="case-display">用一個虛擬品牌，<span>累積不同內容實作。</span></p><p>以「趣畫畫」作為虛擬品牌情境，將不同 AI 與數位工具練習累積在同一個品牌脈絡下，探索品牌設定如何延伸至不同內容形式。</p><p class="case-note">本案例為虛擬品牌內容實作，不代表真實品牌營運成果。</p></header>
 
-      <article class="case-outcome text-only reveal" id="funpaint-brand"><div class="case-content"><span class="meta">01｜BRAND FOUNDATION</span><h3>建立共同的品牌內容情境</h3><dl class="detail-list"><div><dt>品牌核心</dt><dd>以輕鬆、有趣、低門檻的繪畫體驗，降低接觸創作的心理門檻，讓繪畫自然融入日常生活。</dd></div><div><dt>目標受眾</dt><dd>希望以簡單、有趣方式接觸創作的成人與親子族群。</dd></div><div><dt>品牌個性</dt><dd>親切｜有趣｜療癒｜富有創造力</dd></div><div><dt>實作內容</dt><dd>品牌定位｜Logo｜視覺識別｜LINE OA</dd></div></dl></div></article>
+      <article class="case-outcome text-only funpaint-foundation reveal" id="funpaint-brand">
+        <div class="case-content">
+          <span class="meta">01｜BRAND FOUNDATION</span>
+          <h3>建立共同的品牌內容情境</h3>
+          <div class="funpaint-foundation-grid">
+            <section class="funpaint-identity" aria-label="趣畫畫品牌識別">
+              <div class="funpaint-identity-visual"><img src="https://lh3.googleusercontent.com/d/1O2DCZNkahwl2oy3GyN78mYmpYY3APAKH=w1600" alt="趣畫畫 Logo 與品牌角色主視覺" loading="lazy" decoding="async" onerror="this.closest('section').hidden=true"></div>
+              <p class="funpaint-claim">每個人，都可以自在開始畫畫。</p>
+              <p class="funpaint-summary">透過友善的引導與陪伴，<br>讓不同年齡、不同程度的人，<br>都能從第一筆開始，<br>慢慢找到自己的創作節奏。</p>
+              <div class="funpaint-brand-system">
+                <div class="funpaint-palette" role="list" aria-label="趣畫畫品牌色彩">
+                  <span class="funpaint-swatch" role="listitem" aria-label="湖水藍 HEX #42BEC1" style="background:#42BEC1"></span>
+                  <span class="funpaint-swatch" role="listitem" aria-label="深藍綠 HEX #1C5469" style="background:#1C5469"></span>
+                  <span class="funpaint-swatch" role="listitem" aria-label="暖黃色 HEX #FFC11F" style="background:#FFC11F"></span>
+                  <span class="funpaint-swatch" role="listitem" aria-label="珊瑚橘 HEX #F4694B" style="background:#F4694B"></span>
+                  <span class="funpaint-swatch" role="listitem" aria-label="奶油白 HEX #FFFAEF" style="background:#FFFAEF"></span>
+                </div>
+                <p class="funpaint-keywords">自在開始｜陪伴創作｜生活藝術</p>
+              </div>
+            </section>
+            <dl class="funpaint-planning">
+              <div><dt>目標受眾</dt><dd>希望以簡單、有趣方式接觸創作的成人、親子與不同程度的繪畫初學者。</dd></div>
+              <div><dt>溝通方式</dt><dd>以親切、生活化且具陪伴感的內容，降低對繪畫技巧與經驗的距離感。</dd></div>
+              <div><dt>內容應用</dt><dd>將品牌設定延伸至角色貼圖、社群圖文、招生宣傳、活動視覺與 LINE 官方帳號。</dd></div>
+            </dl>
+          </div>
+        </div>
+      </article>
 
-      <article class="case-outcome text-only reveal" id="funpaint-content"><div class="case-content"><span class="meta">02｜AI CONTENT</span><h3>從品牌設定，延伸不同內容形式。</h3><p>以共同的品牌定位與視覺方向，練習將內容應用於不同數位接觸點。</p><dl class="detail-list"><div><dt>實作內容</dt><dd>社群圖文｜招生 DM｜EDM｜LINE OA｜AI 文案｜AI 視覺｜短影音腳本｜直播腳本</dd></div><div><dt>我的實作</dt><dd>內容發想｜文案整理｜視覺方向探索｜AI 協作｜內容原型製作</dd></div></dl><p class="case-evidence"><strong>能力證據</strong><br>品牌內容延伸｜跨媒介應用｜AI 輔助探索｜視覺一致性</p></div></article>
+      <article class="case-outcome text-only funpaint-applications reveal" id="funpaint-content">
+        <div class="case-content">
+          <span class="meta">02｜CONTENT APPLICATIONS</span>
+          <h3>從品牌設定，延伸至不同內容接觸點。</h3>
+          <p>以共同的品牌主張、角色與視覺語言，練習將內容應用於社群溝通、招生宣傳、活動視覺與 LINE 官方帳號，並運用 AI 協助文案發想、視覺探索與內容原型製作。</p>
+          <dl class="detail-list">
+            <div><dt>我的實作</dt><dd>內容發想｜文案整理｜視覺方向探索｜AI 協作｜內容原型製作</dd></div>
+          </dl>
+          <p class="case-evidence"><strong>能力證據</strong><br>品牌內容延伸｜跨媒介應用｜AI 輔助探索｜視覺一致性</p>
+          <div class="funpaint-gallery" aria-label="趣畫畫內容應用圖片牆">
+            <figure class="funpaint-figure funpaint-stickers"><div class="funpaint-image-stage"><img src="https://lh3.googleusercontent.com/d/1YsEbxA8ivF8uC8bPPvBwUSKJOYkLeJu_=w1600" alt="趣畫畫品牌角色貼圖組" loading="lazy" decoding="async" onerror="this.closest('figure').hidden=true"></div><figcaption class="funpaint-caption">角色貼圖｜延伸品牌個性與溝通語氣</figcaption></figure>
+            <figure class="funpaint-figure funpaint-line"><div class="funpaint-image-stage"><img src="https://lh3.googleusercontent.com/d/16Wp3TEblbrpdd9vW4DQe2N86Z4UD0JiZ=w1600" alt="趣畫畫 LINE 官方帳號內容規劃畫面" loading="lazy" decoding="async" onerror="this.closest('figure').hidden=true"></div><figcaption class="funpaint-caption">LINE 官方帳號｜品牌資訊與內容接觸點</figcaption></figure>
+            <figure class="funpaint-figure funpaint-brand-visual"><div class="funpaint-image-stage"><img src="https://lh3.googleusercontent.com/d/1DTIAl6aoo8cGPAOti1bY4m2fDn2ifc_Z=w1600" alt="趣畫畫品牌與招生主視覺" loading="lazy" decoding="async" onerror="this.closest('figure').hidden=true"></div><figcaption class="funpaint-caption">品牌主視覺｜品牌概念與內容語氣</figcaption></figure>
+            <div class="funpaint-gallery-stack">
+              <figure class="funpaint-figure funpaint-offer"><div class="funpaint-image-stage"><img src="https://lh3.googleusercontent.com/d/1rv_P4EianO5CxT4XYIKTx7v7Q4Sh2nMX=w1600" alt="趣畫畫開幕招生優惠宣傳視覺" loading="lazy" decoding="async" onerror="this.closest('figure').hidden=true"></div><figcaption class="funpaint-caption">招生優惠｜促銷訊息與視覺層級</figcaption></figure>
+              <figure class="funpaint-figure funpaint-experience"><div class="funpaint-image-stage"><img src="https://lh3.googleusercontent.com/d/1dzTZe1e-HtwLESadfbzQ_T2ZYuG5MezN=w1600" alt="趣畫畫30分鐘速寫體驗活動宣傳視覺" loading="lazy" decoding="async" onerror="this.closest('figure').hidden=true"></div><figcaption class="funpaint-caption">體驗活動｜活動概念與宣傳視覺</figcaption></figure>
+            </div>
+          </div>
+        </div>
+      </article>
     </section>
 
     <section class="case-study section shell" id="case-03">
